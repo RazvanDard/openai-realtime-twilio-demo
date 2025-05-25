@@ -6,20 +6,23 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/server.js",
-    "dev": "nodemon --watch 'src/**/*' --watch '.env' --ext 'ts,js,xml,env' --exec 'ts-node' src/server.ts",
+    "dev": "nodemon --watch 'src/**/*' --watch '.env' --ext 'ts,js,xml,env' --exec ts-node src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.8",
     "@types/node": "^22.0.0",
     "@types/ws": "^8.5.12",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.2",
     "httpdispatcher": "^2.2.0",
+    "jsonwebtoken": "^9.0.2",
     "ts-node": "^10.9.2",
+    "twilio": "^5.6.1",
     "typescript": "^5.5.4",
     "ws": "^8.18.0"
   },
@@ -27,6 +30,7 @@
     "@types/cors": "^2.8.17",
     "@types/dotenv": "^8.2.0",
     "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.9",
     "nodemon": "^2.0.22"
   }
 }
